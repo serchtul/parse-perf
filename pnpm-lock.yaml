@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -15,8 +15,8 @@ dependencies:
     specifier: ^9.0.0
     version: 9.0.0(@nestjs/common@9.0.0)(@nestjs/core@9.0.0)
   parse-server:
-    specifier: ^6.2.0
-    version: 6.2.0(@babel/core@7.22.1)(eslint@8.0.1)
+    specifier: ^6.2.2
+    version: 6.2.2(@babel/core@7.22.1)(eslint@8.0.1)
   reflect-metadata:
     specifier: ^0.1.13
     version: 0.1.13
@@ -30,7 +30,7 @@ devDependencies:
     version: 9.0.0
   '@nestjs/schematics':
     specifier: ^9.0.0
-    version: 9.0.0(chokidar@3.5.3)(typescript@4.7.4)
+    version: 9.0.0(typescript@5.0.2)
   '@nestjs/testing':
     specifier: ^9.0.0
     version: 9.0.0(@nestjs/common@9.0.0)(@nestjs/core@9.0.0)(@nestjs/platform-express@9.0.0)
@@ -963,6 +963,7 @@ packages:
 
   /@napi-rs/triples@1.1.0:
     resolution: {integrity: sha512-XQr74QaLeMiqhStEhLn1im9EOMnkypp7MZOwQhGzqp2Weu5eQJbpPxWxixxlYRKWPOmJjsk6qYfYH9kq43yc2w==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -1082,6 +1083,21 @@ packages:
       jsonc-parser: 3.0.0
       pluralize: 8.0.0
       typescript: 4.7.4
+    transitivePeerDependencies:
+      - chokidar
+    dev: true
+
+  /@nestjs/schematics@9.0.0(typescript@5.0.2):
+    resolution: {integrity: sha512-l4AReqX597iKyAXVN9WsrLQ1NDY0G15s7x8dHpwM0+3MOFoEKZMvqeiFrfVMqbwuMiTvXTuLcoMdlKuz7qtrDg==}
+    peerDependencies:
+      typescript: ^4.3.5
+    dependencies:
+      '@angular-devkit/core': 14.0.5(chokidar@3.5.3)
+      '@angular-devkit/schematics': 14.0.5(chokidar@3.5.3)
+      fs-extra: 10.1.0
+      jsonc-parser: 3.0.0
+      pluralize: 8.0.0
+      typescript: 5.0.2
     transitivePeerDependencies:
       - chokidar
     dev: true
@@ -1263,6 +1279,7 @@ packages:
 
   /@node-rs/helper@1.3.3:
     resolution: {integrity: sha512-p4OdfQObGN9YFy5WZaGwlPYICQSe7xZYyXB0sxREmvj1HzGKp5bPg2PlfgfMZEfnjIA882B9ZrnagYzZihIwjA==}
+    requiresBuild: true
     dependencies:
       '@napi-rs/triples': 1.1.0
     dev: false
@@ -4711,6 +4728,7 @@ packages:
 
   /memory-pager@1.5.0:
     resolution: {integrity: sha512-ZS4Bp4r/Zoeq6+NLJpP+0Zzm0pR8whtGPf1XExKLJBAczGMnSi3It14OiNCStjQjM6NU1okjQGSxgEZN8eBYKg==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -5041,8 +5059,8 @@ packages:
       lines-and-columns: 1.2.4
     dev: true
 
-  /parse-server@6.2.0(@babel/core@7.22.1)(eslint@8.0.1):
-    resolution: {integrity: sha512-BbPXBZfk8H4boZhq0LUQo0PJLmyLFa+5aPUBrNpi1567UXS9QFBuFouyAQ+TvZkq3AxymYHDAOA1BV0dccTk5Q==}
+  /parse-server@6.2.2(@babel/core@7.22.1)(eslint@8.0.1):
+    resolution: {integrity: sha512-UE1d0lB8T7yho54ph+k6Raf8oAJvRni4nO7q2ZBaM5HTiy+RNLtGFjqTMoB3bsFIZbodcBTuieA5ot0zhtZt4Q==}
     engines: {node: '>=14.21.0 <17 || >=18 <19'}
     hasBin: true
     requiresBuild: true
@@ -5827,6 +5845,7 @@ packages:
 
   /sparse-bitfield@3.0.3:
     resolution: {integrity: sha512-kvzhi7vqKTfkh0PZU+2D2PIllw2ymqJKujUcyPMd9Y75Nv4nPbGJZXNhxsgdQab2BmlDct1YnfQCguEvHr7VsQ==}
+    requiresBuild: true
     dependencies:
       memory-pager: 1.5.0
     dev: false
